@@ -43,6 +43,7 @@ Center                         |Left                       |Right               
 ![](/image/center1.png)        |![](/image/left1.png)      |![](/image/right1.png)         |
 
 
+
 - Track 2
 
 Center                         |Left                       |Right                          |
@@ -69,13 +70,10 @@ The more data the model train on, the better the performance. Since I only recor
 
 ***Flipped Image Example**
 
-- Track 1
-
 Left (Before)                  |Left (After)              |
 :-----------------------------:|:-------------------------:
 ![](/image/left1cor.png)       |![](/image/left1aug.png)  |
 
-- Track 2
 
 Right (Before)                 |Right (After)             |
 :-----------------------------:|:-------------------------:
