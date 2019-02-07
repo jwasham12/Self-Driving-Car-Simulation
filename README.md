@@ -44,27 +44,42 @@ Center                         |Left                       |Right               
 
 
 - Track 2
-![Center](/image/center2.png) ![Left](/image/left2.png) ![Right](/image/right2.png)
+
+Center                         |Left                       |Right                          |
+:-----------------------------:|:-------------------------:|:------------------------------:
+![](/image/center2.png)        |![](/image/left2.png)      |![](/image/right2.png)         |
 
 
 # Steering Angle Correction
 
 In order to account the left and right camera position being off centered, the steering angle should be correct. Testing from no correction to +/- 0.25, the best correct was +/- 0.15 for both tracks.
 
-![Left (Before)](/image/left1ang.png) ![Left (After)](/image/left1cor.png)
+Left (Before)                  |Left (After)              |
+:-----------------------------:|:-------------------------:
+![](/image/left1ang.png)       |![](/image/left1cor.png)  |
 
-![Right (Before)](/image/right1ang.png) ![Right (After)](/image/tight1cor.png)
+Right (Before)                 |Right (After)             |
+:-----------------------------:|:-------------------------:
+![](/image/right1ang.png)      |![](/image/right1cor.png) |
+
 
 # Image Augmentation
 
 The more data the model train on, the better the performance. Since I only recorded 1 lap of the track, the model might not have enough information to run and make mistakes on the steering angle prediction. One of the ways to fix the limited data problem with images is to perform the augmentation process. Image augmentation artificially creates training images through different ways of processing or combination of multiple processing, such as random rotation, shifts, shear, and flips, etc. In this specific example, the images are flipped and the corresponding steering angles are inversed. This process will double the data I originally obtained from the simulation. 
 
 ***Flipped Image Example**
+
 - Track 1
-![Left (Before)](/image/left1cor.png) ![Left (After)](/image/left1aug.png)
+
+Left (Before)                  |Left (After)              |
+:-----------------------------:|:-------------------------:
+![](/image/left1cor.png)       |![](/image/left1aug.png)  |
 
 - Track 2
-![Right (Before)](/image/right1cor.png) ![Right (After)](/image/right1aug.png)
+
+Right (Before)                 |Right (After)             |
+:-----------------------------:|:-------------------------:
+![](/image/right1cor.png)      |![](/image/right1aug.png) |
 
 
 # Convolutional Neural Network (CNN)
@@ -88,7 +103,9 @@ The more data the model train on, the better the performance. Since I only recor
 |Dense|(None, 1)|51|
 
 Total params: 330,021
+
 Trainable params: 330,021
+
 Non-trainable params: 0
 
 # Model Evaluation
