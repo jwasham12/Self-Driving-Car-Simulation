@@ -37,9 +37,10 @@ Udacity built a car simulator for Udacity's Self-Driving Car Nanodegree course a
 **IMG (160 X 320 images recorded)**
 
 - Track 1
-Center                         |Left                       |Right
-:-----------------------------:|:-------------------------:|:------------------------------
-![](/image/center1.png)        |![](/image/left1.png)      |![](/image/right1.png)
+
+Center                         |Left                       |Right                          |
+:-----------------------------:|:-------------------------:|:------------------------------:
+![](/image/center1.png)        |![](/image/left1.png)      |![](/image/right1.png)         |
 
 
 - Track 2
