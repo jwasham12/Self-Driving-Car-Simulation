@@ -23,6 +23,7 @@ Udacity built a car simulator for Udacity's Self-Driving Car Nanodegree course a
 - Record each tracks (Produces two files for each track)
 
 **driving_log.csv (Driving information)**
+
 |Feature|Type|Description|
 |---|---|---|
 |Center|Object|Path to the center image file| 
@@ -34,8 +35,12 @@ Udacity built a car simulator for Udacity's Self-Driving Car Nanodegree course a
 |Speed|Float|Speed of the car| 
 
 **IMG (160 X 320 images recorded)**
+
 - Track 1
-![Center](/image/center1.png) ![Left](/image/left1.png) ![Right](/image/right1.png)
+Center                         |Left                       |Right
+:-----------------------------:|:-------------------------:|:------------------------------
+![](/image/center1.png)        |![](/image/left1.png)      |![](/image/right1.png)
+
 
 - Track 2
 ![Center](/image/center2.png) ![Left](/image/left2.png) ![Right](/image/right2.png)
@@ -64,6 +69,7 @@ The more data the model train on, the better the performance. Since I only recor
 # Convolutional Neural Network (CNN)
 
 **Model Structure**
+
 |Layer|Output Shape|Param #|
 |---|---|---|
 |Cropping 2d|(None, 65, 320, 3)|0| 
