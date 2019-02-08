@@ -84,6 +84,8 @@ Right (Before)                 |Right (After)             |
 
 **Model Structure**
 
+- Based on [NVDIA model structure](https://devblogs.nvidia.com/deep-learning-self-driving-cars/)
+
 |Layer|Output Shape|Param #|
 |---|---|---|
 |Cropping 2d|(None, 65, 320, 3)|0| 
